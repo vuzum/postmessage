@@ -106,3 +106,8 @@ var XD = function(){
         }
     };
 }();
+if (typeof module !== 'undefined') {
+    module.exports = XD;
+} else {
+    window.XD = XD;
+}
